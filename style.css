@@ -1,0 +1,18 @@
+.mainheading {
+ text-align: center;
+}
+
+.results {
+ text-align: center;
+}
+
+.user-input {
+ display: flex;
+ justify-content: center;
+ align-content: space-around;
+}
+
+.generate {
+ display: block;
+ margin: 0 auto
+}
