@@ -9,12 +9,14 @@ function getSelectedValue() {
 
 getSelectedValue();
 
+
+
 const buttonPress = document.getElementById("convert-button");
 
 buttonPress.addEventListener("click", convertFunction);
 
 function convertFunction() {
- alert("Button was pressed!");
+ getSelectedValue();
 };
 
 
