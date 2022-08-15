@@ -1,7 +1,14 @@
-const generateButton = document.getElementById("convert-button");
+var selectedValue = document.getElementById("units").value;
 
-generateButton.addEventListener("click", convertFunction);
+const buttonPress = document.getElementById("convert-button");
+
+buttonPress.addEventListener("click", convertFunction);
+
 
 function convertFunction() {
- alert("The convert button was clicked!")
+ alert(selectedValue);
 };
+
+
+
+
