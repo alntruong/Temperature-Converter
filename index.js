@@ -8,7 +8,12 @@ function convertFunction() {
  var tempDisplayBottom = document.getElementById("temperature-2"); 
 
  var selectedValue = document.getElementById("units").value;
- // console.log(selectedValue);
+
+ /* if (typeof selectedValue === "string") {
+  console.log("it's a string")
+ } else {
+  console.log("it's not a string")
+ }; */ 
 
  var temperatureValue = document.getElementById("number-input").value;
  // console.log(temperatureValue);
