@@ -19,7 +19,6 @@ function convertFunction() {
   // Is the selectedValue read as a string when converted into a value?
   // why must the cases be in string format?
   case "kelvin":
-   console.log("switch kelvin")
    let kelvinToCelcius = parsedTemp - 273.15 + " °C";
    let kevlinToFarenheit = (parsedTemp - 273.15) * (9 / 5) + 32 + " °F";
    tempDisplayTop.innerHTML = kelvinToCelcius;
@@ -27,7 +26,6 @@ function convertFunction() {
     break;
 
   case "farenheit":
-   console.log("switch farenheit");
    let farenheitToCelcius = (parsedTemp - 32) * (5/9) + " °C";
    let farenheitToKelvin = (parsedTemp - 32) * (5/9) + 273.15 + " °K";
    tempDisplayTop.innerHTML = farenheitToCelcius;
@@ -35,7 +33,6 @@ function convertFunction() {
     break;
 
   case "celcius":
-   console.log("switch celcius");
    let celiusToKelvin = parsedTemp + 273.15 + " °K";
    let celciusToFarenheit = parsedTemp * (9 / 5) + 32 + " °F";
    tempDisplayTop.innerHTML = celiusToKelvin;
