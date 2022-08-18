@@ -1,8 +1,4 @@
-document.getElementById("units").addEventListener("change", convertFunction);
-/** added an onChange event listener to selection and linked it to convertFunction */
 
-document.getElementById
-("number-input").addEventListener("blur", convertFunction);
 
 const buttonPress = document.getElementById("convert-button");
 
@@ -29,14 +25,11 @@ function convertFunction() {
    let kevlinToFarenheit = (parsedTemp - 273.15) * (9/5) + 32;
    break;
 
-
   case "farenheit":
     console.log("switch farenheit");
-   var farenheitToCelcius = (parsedTemp - 32) * (5 / 9) + " °C";
-   var farenheitToKelvin = (parsedTemp - 32) * (5 / 9) + 273.15 + " °K";
+   let farenheitToCelcius = (parsedTemp - 32) * (5/9) + " °C";
+   let farenheitToKelvin = (parsedTemp - 32) * (5/9) + 273.15 + " °K";
    console.log(farenheitToCelcius);
-   //tempDisplayTop.innerHTML = farenheitToCelcius);
-   //tempDisplayBottom.innerHTML = farenheitToKelvin)
     break;
 
   case "celcius":
