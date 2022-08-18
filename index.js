@@ -1,5 +1,3 @@
-
-
 const buttonPress = document.getElementById("convert-button");
 
 buttonPress.addEventListener("click", convertFunction);
@@ -19,25 +17,29 @@ function convertFunction() {
 
  switch (selectedValue) {
   // Is the selectedValue read as a string when converted into a value?
+  // why must the cases be in string format?
   case "kelvin":
    console.log("switch kelvin")
-   let kelvinToCelcius = parsedTemp - 273.15;
-   let kevlinToFarenheit = (parsedTemp - 273.15) * (9/5) + 32;
-   break;
+   let kelvinToCelcius = parsedTemp - 273.15 + " °C";
+   let kevlinToFarenheit = (parsedTemp - 273.15) * (9 / 5) + 32 + " °F";
+   tempDisplayTop.innerHTML = kelvinToCelcius;
+   tempDisplayBottom.innerHTML = kevlinToFarenheit;
+    break;
 
   case "farenheit":
-    console.log("switch farenheit");
+   console.log("switch farenheit");
    let farenheitToCelcius = (parsedTemp - 32) * (5/9) + " °C";
    let farenheitToKelvin = (parsedTemp - 32) * (5/9) + 273.15 + " °K";
-   console.log(farenheitToCelcius);
+   tempDisplayTop.innerHTML = farenheitToCelcius;
+   tempDisplayBottom.innerHTML = farenheitToKelvin;
     break;
 
   case "celcius":
-    console.log("switch celcius");
-    let celiusToKelvin = parsedTemp + 273.15;
-    let celciusToFarenheit = parsedTemp * (9/5) + 32;
-    console.log(celiusToKelvin);
-    console.log(celciusToFarenheit);
+   console.log("switch celcius");
+   let celiusToKelvin = parsedTemp + 273.15 + " °K";
+   let celciusToFarenheit = parsedTemp * (9 / 5) + 32 + " °F";
+   tempDisplayTop.innerHTML = celiusToKelvin;
+   tempDisplayBottom.innerHTML = celciusToFarenheit;
     break;
  
   default:
